@@ -2,9 +2,19 @@
   "name": "@enymo/react-clickable",
   "version": "1.0.1",
   "description": "Simple React Component providing a unified API for working with Buttons and Anchors.",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "types": "dist/index.d.cts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.cts" 
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "tsdown": {
     "entry": [
       "src/js/index.tsx"
