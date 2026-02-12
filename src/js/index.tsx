@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { CSSProperties } from "react";
+import { CSSProperties } from "react";
 
 export interface ClickableProps {
     className?: string,
